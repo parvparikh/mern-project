@@ -11,8 +11,8 @@ export default function Header() {
         <Navbar.Brand>
         <Link to="/" className='self-center whitespace-nowrap text-small sm:text-xl font-semibold dark:text-white'>
             <span className='px-2 py-1 bg-gradient-to-r from-indigo-600  via-purple-500 to-indigo-950 rounded-lg text-white'>
-                Parv's</span>
-            Blog
+                Hit</span>
+                Hits
         </Link> 
         </Navbar.Brand>
         <form>
