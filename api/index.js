@@ -3,21 +3,22 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
-import cors from 'cors';
+//import cors from 'cors';
 
+console.log('its definately taking');
 dotenv.config();
-
+console.log('time here right');
 mongoose.connect(process.env.MONGO).then(
     () => {console.log("Database connected!!");}).catch((err) => {console.log(err);});
-
+console.log(' or here 13 time here right');
 
 const app = express();
 
-app.use(cors({
+/*app.use(cors({
     origin: 'http://localhost:5173', // Replace with your frontend origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
-  }));
+  }));*/
 
 app.use(express.json());
 
